@@ -6,6 +6,8 @@ metadata:
 spec:
   image: nginx:1.23.3
   port: 80
+  labels:
+    app.kubernetes.io/instance: test
   accessPolicy:
     inbound:
       rules:
